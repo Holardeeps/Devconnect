@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>DevConnector</title>
+</head>
+
+<body>
+
+    <!-- ++++++++++++Navbar++++++++++++++++++ -->
+    <nav class="navbar bg-dark">
+        <h1>
+            <a href="/asset/dashboard.html"><i class='bx bx-code-alt'></i>DevConnector</a>
+        </h1>
+        <ul>
+            <li><a href="/asset/profiles.html">Developers</a></li>
+            <li><a href="/asset/register.html">Register</a></li>
+            <li><a href="/asset/login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- ++++++++++++++landing Page+++++++++++++++ -->
+    <section class="container">
+        <!-- ++++++Alert++++++++ -->
+         <div class="alert alert-danger">Invalid Credentials</div>
+        <h1 class="lg text-primary">Sign In</h1>
+        <p class="lead"><i class="bx bx-user"></i>Sign into your account</p>
+
+        <form action="/asset/dashboard.html" class="form">
+           
+            <div class="form-group">
+                <input type="email" placeholder="Email address">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" minlength="6">
+            </div>
+            <input type="submit" value="Login" class="btn btn-primary">
+        </form>
+        <p class="my-1">Don't have an account?. <a href="/asset/register.html">Sign Up</a></p>
+    </section>
+</body>
+
+</html>
