@@ -347,7 +347,7 @@ img {
   width: 100%;
   top: 0;
   border-bottom: solid 1px #17a2b8;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 .navbar ul {
   display: flex;
@@ -454,4 +454,77 @@ img {
 .profile-grid .profile-github .repo > div:last-child {
   flex: 3;
   flex-basis: 20%;
+}
+
+.post-form-header {
+  padding: 0.5rem;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+}
+.post > div:first-child {
+  text-align: center;
+}
+.post img {
+  width: 150px;
+}
+
+@media (max-width: 700px) {
+  .hide-sm {
+    display: none;
+  }
+  .container {
+    margin-top: 8rem;
+  }
+  .text-primary {
+    padding-top: 1rem;
+  }
+  .x-lg {
+    font-size: 3rem;
+  }
+  .lg {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+  .navbar ul {
+    text-align: center;
+    justify-content: center;
+  }
+  .navbar h1 {
+    margin-bottom: 1rem;
+  }
+  .dash-btns a {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.2rem;
+  }
+  .profile {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .profile ul {
+    display: none;
+  }
+  .profile-grid {
+    grid-template-areas: "top" "about" "exp" "edu" "github";
+  }
+  .profile-about .skills {
+    flex-direction: column;
+  }
+  .post {
+    grid-template-columns: 1fr;
+  }
+  .post a, .post button {
+    padding: 0.3rem 0.4rem;
+  }
 }/*# sourceMappingURL=style.css.map */
